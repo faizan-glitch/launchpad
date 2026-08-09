@@ -1,0 +1,19 @@
+# Caddy reverse proxy template
+#
+# The installer now generates `/etc/caddy/Caddyfile` from your prompts.
+# Use this as a reference if you want to maintain a manual Caddyfile.
+# If you enable rate limiting in the wizard, the generated config also
+# builds Caddy with the caddy-ratelimit module and inserts a rate_limit block.
+
+your-domain.example {
+	header {
+		-Server
+		Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+		X-Content-Type-Options nosniff
+		X-Frame-Options DENY
+		Referrer-Policy no-referrer
+		Permissions-Policy "camera=(), microphone=(), geolocation=()"
+	}
+	reverse_proxy 127.0.0.1:3000 127.0.0.1:3001
+	encode gzip
+}
