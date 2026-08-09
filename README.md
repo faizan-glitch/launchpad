@@ -110,11 +110,11 @@ Current limitations include package installs/removals, some service state change
 
 ## FAQ
 
-###### Why "launchpad"?
+##### Why "launchpad"?
 
 Because this project acts as a starting point for me to quickly configure virtual machines as per my likings.
 
-###### Why did I build this instead of using something like Ansible?
+##### Why did I build this instead of using something like Ansible?
 
 I set up new VMs all the time and manual setup is tedious and I swanted to experiment with Lua and I had these scripts individually as Bash scripts but reading Bash is torture for me. So i just translated them from Bash to Lua.   
 
