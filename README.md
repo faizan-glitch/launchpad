@@ -108,6 +108,7 @@ Current limitations include package installs/removals, some service state change
 - add hardened Wireguard VPN configurations (not sure how to go about automate Amnezia-WG VPN)
 - installation useful tools i used on virtual machines, micro, tmux, zoxide, fzf, ripgrep etc
 - add RHEL based linux distros support, lately I have been dabbling with RHEL v9 and v10, so would be nice if this tool could support RHEL based distros as well probably need to use SELinux instead of AppArmor over there
+- add prometheus, grafana, node-exporter, nginx/caddy exporter etc (work-in-progress)
 
 ## FAQ
 
